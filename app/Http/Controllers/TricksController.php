@@ -43,11 +43,10 @@ class TricksController extends Controller
     public function store(Request $request)
     {
         //
-        $trick = $request->isMethod('put')? User::findOrFail($request->user_id) : new User;
-        $trick->id = $request->input('trick_id');
+        $trick = $request->isMethod('put')? Trick::findOrFail($request->trick_id) : new Trick;
         $trick->name = $request->input('name');
         $trick->description = $request->input('description');
-        $trick->name_of_place = $request->input('name_of_place');
+        $trick->place = $request->input('place');
 
 
         if ($trick->save()) {

@@ -15,10 +15,9 @@ class CreateTricksTable extends Migration
     {
         Schema::create('tricks', function (Blueprint $table) {
             $table->increments('id');
-$table->string('name');
-            $table->integer('user_id')->unsigned();
+            $table->string('name');
             $table->mediumText('description');
-            $table->string('name_of_places');
+            $table->string('place');
             $table->timestamps();
         });
     }

@@ -75,3 +75,8 @@ create a database skater in the env file and add the
 sign in credentials
 php artisan serve
 visit your localhost/api/ test
+
+
+link to my test 
+
+https://www.getpostman.com/collections/c1a87da1952884a3f928
